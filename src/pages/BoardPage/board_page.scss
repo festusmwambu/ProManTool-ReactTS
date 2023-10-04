@@ -1,0 +1,32 @@
+@import '../../styles/colors.scss';
+
+.board {
+    width: 100%;
+    height: calc(100% - 40px);
+    position: relative;
+    top: 40px;
+    overflow-y: hidden;
+
+    &__columns {
+        display: inline-flex;
+        justify-content: flex-start;
+        min-width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 100%;
+        padding: 0 20px;
+
+        @media (min-width: 992px) {
+            height: unset;
+        }
+    }
+
+    &__title {
+        text-transform: capitalize;
+        color: $app-primary;
+        font-weight: lighter;
+        font-family: "montserrat";
+        margin-top: 25px;
+        padding: 0 20px;
+    }
+}

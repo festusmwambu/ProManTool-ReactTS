@@ -1,0 +1,19 @@
+.editable-text {
+    cursor: pointer;
+    display: flex;
+
+    &__icon {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    &:hover {
+        & > * {
+            text-decoration: underline;
+        }
+
+        .editable-text__icon {
+            opacity: 1;
+        }
+    }
+}

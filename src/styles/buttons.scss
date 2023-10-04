@@ -1,0 +1,59 @@
+@import "./colors.scss";
+
+
+.btn {
+    padding: 10px 20px;
+    color: $app-primary;
+    font-family: "montserrat";
+    height: min-content;
+    cursor: pointer;
+    background-color: $app-secondary;
+    transition: 0.5s all;
+    font-weight: 600;
+    border: 0;
+
+    &--sm {
+        padding: 6px 10px;
+    }
+
+    &--lg {
+        padding: 15px 25px;
+    }
+
+    &--block {
+        width: 100%;
+    }
+
+    &:hover {
+        background-color: #f7f7f7;
+    }
+
+    &--danger {
+        background-color: #cc2200;
+        border-color: #d13b30;
+    }
+
+    &--warning {
+        background-color: #c5cc00;
+        border-color: #d4db00;
+    }
+
+    &--success {
+        background-color: #086e09;
+        border-color: #0a8a0b;
+    }
+
+    &--info {
+        background-color: unset;
+        color: #0645ad;
+        border-color: rgba(0, 0, 0, 0);
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+
+    &:focus {
+        outline: unset;
+    }
+}

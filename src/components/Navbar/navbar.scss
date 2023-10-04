@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: &app-primary;
+    color: &app-secondary;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+
+    &__link {
+        color: &app-secondary;
+        align-items: center;
+        font-weight: 200;
+        font-family: "montserrat";
+        margin-right: 20px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &--active {
+            font-weight: 500;
+        }
+    }
+}

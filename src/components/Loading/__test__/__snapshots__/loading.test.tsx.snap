@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+exports[`<Loading /> Matches snapshot 1`] = `
+    <div className="loading">
+        <img src="[object Object]" />
+    </div>
+`;

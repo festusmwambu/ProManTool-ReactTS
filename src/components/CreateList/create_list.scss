@@ -1,0 +1,25 @@
+@import "../../styles/colors.scss";
+
+.create-list {
+    background-color: $app-primary-light;
+    width: 272px;
+    height: min-content;
+    margin: 5px;
+    border: 2px solid #ffd187;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &__header {
+        padding: 10px 10px 5px;
+        color: $app-secondary;
+
+        &-title {
+            overflow-wrap: break-word;
+            font-family: "montserrat";
+            margin: 0;
+            font-weight: 800;
+        }
+    }
+}

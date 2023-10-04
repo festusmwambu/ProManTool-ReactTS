@@ -1,0 +1,81 @@
+@import "../../styles/colors.scss";
+
+.task {
+    background-color: $app-secondary;
+    min-height: 40px;
+    margin: 5px;
+    border: 1px solid $app-primary;
+    padding: 15px 15px 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &-title {
+            font-family: "Montserrat", sans-serif;
+            overflow-wrap: anywhere;
+            margin: 0;
+            margin-bottom: 5px;
+            width: 85%;
+            font-weight: 300;
+        }
+
+        &-id {
+            font-size: 11px;
+            margin: 0;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-priority {
+            display: flex;
+            align-items: center;
+
+            &__bubble {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 4px;
+
+                &--low {
+                    background-color: #00aa9d;
+                }
+
+                &--medium {
+                    background-color: #33d033;
+                }
+
+                &--high {
+                    background-color: #df0024;
+                }
+            }
+
+            &__value {
+                font-size: 11px;
+            }
+        }
+
+        &-icons {
+            display: flex;
+        }
+
+        &-icon {
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: 0.5s all;
+            font-size: 11px;
+
+            &:hover {
+                background-color: #dedede;
+            }
+        }
+    }
+}

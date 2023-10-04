@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GitHubOAuth /> Matches snapshot 1`] = `
+<div
+  className="oauth-github"
+>
+  <i
+    aria-hidden="true"
+    className="oauth-github__icon fab fa-github"
+  />
+  <p
+    className="oauth-github__text"
+  >
+    Auth with Github
+  </p>
+</div>
+`;

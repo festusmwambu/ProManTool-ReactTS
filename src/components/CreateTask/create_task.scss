@@ -1,0 +1,20 @@
+.create-task {
+    display: flex;
+
+    &__placeholder {
+        width: 100%;
+        padding: 5px 10px 5px 10px;
+        color: #926824;
+        cursor: pointer;
+        font-family: "montserrat";
+        font-size: 12px;
+
+        &-icon {
+            margin-right: 5px;
+        }
+    }
+
+    &__textarea {
+        margin: 2px 0;
+    }
+}
